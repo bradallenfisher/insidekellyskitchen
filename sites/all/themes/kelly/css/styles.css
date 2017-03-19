@@ -471,6 +471,15 @@ article a:active {
 .node--blog {
   max-width: 801px; }
 
+#block-views-blog-field-from-recipes-block {
+  width: 80%;
+  margin: 20px auto; }
+  #block-views-blog-field-from-recipes-block p {
+    line-height: 2;
+    font-size: 1.3rem; }
+  #block-views-blog-field-from-recipes-block h2 {
+    padding: 20px 0; }
+
 .bottom {
   box-sizing: border-box;
   max-width: 1200px;
