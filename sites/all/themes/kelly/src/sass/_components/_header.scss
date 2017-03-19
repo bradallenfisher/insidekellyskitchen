@@ -1,0 +1,47 @@
+.row {
+}
+
+.head-wrapper {
+  width: 100%;
+
+
+  img {
+    cursor: pointer;
+    padding: 15px;
+    @include breakpoint(460px, true) {
+      padding: 10px;
+    }
+  }
+}
+.menu-expander {
+  background: $black;
+  color: $white;
+  cursor: pointer;
+  float: right;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: right;
+  @include breakpoint($full, true) {
+    display: none;
+  }
+}
+.search-expander {
+  cursor: pointer;
+  float: right;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: right;
+}
+
+#header {
+    box-sizing: border-box;
+    width: 55%;
+    float: left;
+    @include breakpoint($full, true) {
+      width: 19%;
+    }
+    @include breakpoint(1000px, true) {
+      width: 30%;
+    }
+
+}

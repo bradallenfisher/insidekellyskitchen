@@ -1,0 +1,51 @@
+.cookbook {
+
+  .cookbook-inner {
+    overflow: hidden;
+  }
+  .cookbook-image {
+
+    .field--name-field-image {
+      text-align: center;
+
+      @include breakpoint(700px, true){
+
+      }
+      img {
+        width: 50%;
+        @include breakpoint($full, true) {
+          width: 40%;
+          float: left;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .cookbook-text {
+    @include breakpoint($full, true) {
+      float: right;
+      width: 48%;
+    }
+  }
+  h1.cookbook-title {
+    color: $black;
+    font-size: 2em;
+    text-align:  center;
+    @include breakpoint($full, true){
+      text-align: left;
+    }
+  }
+  .field--name-field-paypal {
+    @include breakpoint($full, true){
+      text-align: left;
+    }
+  }
+}
+.cookbook-body {
+  font-size: 1.7em;
+  float: right;
+  padding: 40px 0;
+  font-weight: 300;
+
+}

@@ -1,0 +1,12 @@
+.pager {
+    clear: both;
+    padding: 60px;
+    text-align: center;
+}
+
+.pager__item.pager__item--current {
+  background: #000;
+  color:$white;
+  padding: 8px;
+  border-radius: 50%;
+}

@@ -1,0 +1,193 @@
+.node--recipe {
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    @include breakpoint(1200px, true) {
+      position: absolute;
+      bottom: 20px;
+      padding: 10px;
+      background: #eee;
+      margin-bottom: 0;
+
+    }
+    @include breakpoint(1450px, true) {
+      position: relative;
+      padding: 10px;
+      background: none;
+      bottom: 0;
+    }
+  }
+
+  .widgets {
+    clear: both;
+    margin-bottom: 15px;
+    overflow: hidden;
+    @include breakpoint(1450px, true) {
+      clear: none;
+    }
+  }
+  .field--name-field-rate-this-recipe {
+    clear: both;
+    overflow: hidden;
+    padding: 10px 0;
+    text-align: center;
+    @include breakpoint(500px, true) {
+      float: right;
+      clear: none;
+      width: inherit;
+
+    }
+  }
+  .a2a_kit {
+    clear: both;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 0;
+    @include breakpoint(500px, true) {
+      clear: none;
+      float: left;
+      width: 60%;
+    }
+  }
+  .image {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    @include breakpoint(1450px, true) {
+      float: left;
+      width: 50%;
+    }
+    .field--name-field-recipe-image {
+      img {
+        display: block;
+        background: #e1e1e1;
+        padding: 5px;
+        width: 100%;
+      }
+    }
+  }
+
+  .phase {
+    clear:both;
+    font-size: 1em;
+    background: #eee;
+    margin-bottom: 5px;
+    padding: 10px;
+    @include breakpoint(1450px, true) {
+      clear: none;
+      float: left;
+      width: 50%;
+      font-size: 1.5rem;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .field--name-field-calories-per-serving {
+    margin-bottom: 5px;
+    font-size: 1em;
+    float: left;
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 68%;
+    @include breakpoint(1450px, true) {
+      clear: none;
+      float: left;
+      width: 50%;
+      font-size: 1.5rem;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .field--name-field-servings {
+    margin-bottom: 5px;
+    font-size: 1em;
+    float: right;
+    background: #f1f1f1;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 31%;
+    @include breakpoint(1450px, true) {
+      clear: none;
+      float: left;
+      width: 50%;
+      font-size: 1.5rem;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .text {
+    clear: both;
+    padding: 20px 0;
+  }
+
+  .field--name-field-ingredients {
+    @include breakpoint(900px, true) {
+      float: left;
+      width: 49%;
+    }
+    .field__label {
+      border-bottom: 1px solid #ccc;
+      color: $black;
+      font-size: 1.8em;
+      font-weight: 100;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .field-items {
+      margin-bottom: 30px;
+    }
+    p {
+      line-height: 2;
+      font-size: 1.3em;
+    }
+  }
+
+  .field--name-field-directions {
+    @include breakpoint(900px, true) {
+      float: right;
+      width: 49%;
+    }
+
+    .field__label {
+      border-bottom: 1px solid #ccc;
+      color: $black;
+      font-size: 1.8em;
+      font-weight: 100;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+
+    .field-items {
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 2;
+      font-size: 1.3em;
+    }
+
+    li {
+      font-size: 1.3em;
+    }
+  }
+
+  .field--name-body {
+    padding: 20px;
+  }
+
+  .print-link {
+    clear: both;
+  }
+
+  .field__label {
+    font-weight: normal;
+  }
+}
+#block-views-recipes-block-1 {clear:both;}

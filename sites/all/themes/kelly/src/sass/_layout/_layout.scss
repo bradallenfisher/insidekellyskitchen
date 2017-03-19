@@ -1,0 +1,132 @@
+//This is the old layout while cleaner and much easier to read it clips amazon ads which is reallly stupid... mainly cause amazon ads are responsive.
+
+//@include breakpoint($full, true) {
+// .second-sidebar {
+//    .l-content {
+//      @include span(9 of 12);
+//    }
+//  }
+//
+//  .second-sidebar {
+//    .side {
+//      @include span(3 at 10 of 12);
+//    }
+//  }
+//}
+
+
+// here is the fix. DUMB!
+@include breakpoint(900px, true) {
+  .second-sidebar {
+    .l-content {
+      width: 550px;
+      float: left;
+      margin: 0 auto;
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      width:300px;
+      float: right;
+    }
+  }
+}
+
+@include breakpoint(950px, true) {
+  .second-sidebar {
+    .l-content {
+      width: 600px;
+      float: left;
+      margin: 0 auto;
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      width:300px;
+      float: right;
+    }
+  }
+}
+
+@include breakpoint(1000px, true) {
+  .second-sidebar {
+    .l-content {
+      width: 650px;
+      float: left;
+      margin: 0 auto;
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      width:300px;
+      float: right;
+    }
+  }
+}
+
+@include breakpoint(1050px, true) {
+  .second-sidebar {
+    .l-content {
+      width: 700px;
+      float: left;
+      margin: 0 auto;
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      width:300px;
+      float: right;
+    }
+  }
+}
+
+@include breakpoint(1100px, true) {
+  .second-sidebar {
+    .l-content {
+      width: 750px;
+      float: left;
+      margin: 0 auto;
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      width:300px;
+      float: right;
+    }
+  }
+}
+@include breakpoint(1150px, true) {
+  .second-sidebar {
+    .l-content {
+      width: 800px;
+      float: left;
+      margin: 0 auto;
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      width:300px;
+      float: right;
+    }
+  }
+}
+
+@include breakpoint(1200px, true) {
+ .second-sidebar {
+    .l-content {
+      @include span(9 of 12);
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      @include span(3 at 10 of 12);
+    }
+  }
+}

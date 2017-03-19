@@ -1,0 +1,17 @@
+#block-block-30 {
+  clear: both;
+  overflow: hidden;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.4em;
+  }
+}
+
+.home-page-image {
+  @include breakpoint(700px, true) {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+}

@@ -1,0 +1,21 @@
+.node__content {
+  clear: both;
+
+  ul, ol, p {
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  li {
+    margin-bottom: 30px;
+  }
+
+  .a2a_kit {
+    display: block;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,127 @@
+.mean-container .mean-bar {
+  min-height: 0;
+  padding: 0;
+  margin-top: 0;
+  float: none;
+}
+.mean-container .mean-nav {
+  margin-top: 0;
+}
+
+.mean-container a.meanmenu-reveal {
+  display: none !important;
+}
+
+.l-region--mobile-navigation {
+  display: none;
+}
+.l-region--mobile-navigation.open {
+  display: block;
+}
+#navigation {
+  display: none;
+  clear:both;
+  @include breakpoint($full, true) {
+    clear: none;
+    margin-top: 0;
+    float: right;
+    display: block;
+    padding: 6px 0;
+    margin-left: 20px;
+  }
+  ul, li {
+    display: inline;
+  }
+  a {
+    clear: none;
+    color: $black;
+    display: inline-block;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+}
+
+
+.sf-menu {
+  line-height: 1.3;
+}
+.sf-menu a.sf-with-ul,
+.sf-menu span.nolink.sf-with-ul {
+  min-width: 1px;
+  padding-right: 1.8em !important;
+}
+.sf-sub-indicator {
+  background: url(../images/arrows-777777.png) no-repeat -10px -100px;
+}
+#block-superfish-1 {
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+
+    li.active-trail {
+
+    }
+
+    ul {
+
+      //margin-top: -4px;
+      text-align: left;
+
+      ul {
+        margin-top: 0;
+          background: $black;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-grow: 1;
+
+      a {
+
+        display: inline-block;
+        flex-grow: 1;
+        padding: 10px;
+        text-align: center;
+
+      }
+
+      li {
+          background: $black;
+        a {
+          color: $white;
+          padding-left: 20px;
+          text-align: left;
+
+          &:hover {
+            background-color: #383838;
+          }
+        }
+      }
+    }
+  }
+}
+
+.side {
+  text-align: center;
+  ul {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    li {
+      display: block;
+      a {
+        background: $black;
+        color: $white;
+        display: block;
+        font-size: 1em;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 1px;
+        padding: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+
+}

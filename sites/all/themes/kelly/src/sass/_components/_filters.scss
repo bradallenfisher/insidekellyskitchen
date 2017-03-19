@@ -1,0 +1,153 @@
+.views-exposed-form .views-exposed-widget {
+    padding: 0;
+    width: 50%;
+}
+// Filters
+label[for=edit-field-category-value] {
+  background: $white;
+  border: 1px solid;
+  color: $black;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-right: 3%;
+
+}
+label[for=edit-field-category-value]:hover {
+  background: $black;
+  color: $white;
+}
+label[for=edit-field-food-type-value] {
+  background: $white;
+  border: 1px solid;
+  color: $black;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-left: 2%;
+}
+
+label[for=edit-field-food-type-value]:hover {
+  background: $black;
+  color: $white;
+}
+
+.form-item-field-food-type-value{
+  display:none;
+}
+.form-item-field-category-value {
+  display: none;
+}
+
+.form-item-field-category-value.open {
+  display: block;
+
+  label.option {
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-weight: normal;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 25px;
+  }
+
+  .form-type-bef-checkbox {
+    display: block;
+    border: 1px solid $white;
+    color: $white;
+    background: $black;
+
+    &:hover {
+      color: $black;
+      background: $white;
+    }
+  }
+}
+
+.form-item-field-food-type-value.open{
+  display:block;
+
+  label.option {
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-weight: normal;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 25px;
+  }
+
+  .form-type-bef-checkbox {
+    display: block;
+    border: 1px solid $white;
+    color: $white;
+    background: $black;
+
+    &:hover {
+      color: $black;
+      background: $white;
+    }
+  }
+}
+.views-exposed-form {
+  clear: both;
+  margin-bottom: 20px;
+}
+.views-exposed-form .views-exposed-widget {
+  padding: 0; /* LTR */
+}
+.views-widget {
+  position: relative;
+  width: 100%;
+}
+.view-filters {
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+  	background-color: inherit;
+  	color: inherit;
+  	border: 1px solid #cacece;
+  	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  	padding: 9px;
+  	border-radius: none;
+  	display: inline-block;
+  	position: relative;
+    float: left;
+    margin:10px;
+
+    &:active, &:checked:active {
+	    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+	    color: inherit;
+    }
+
+    &:checked {
+    	background-color: inherit;
+    	border: 1px solid #adb8c0;
+    	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    	color: inherit;
+    }
+    &:checked:after {
+	    content: '\2714';
+	    font-size: 14px;
+	    position: absolute;
+	    top: 0px;
+	    left: 3px;
+	    color: inherit;
+    }
+  }
+}
+
+.bef-checkboxes {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
