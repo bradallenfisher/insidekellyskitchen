@@ -18,14 +18,14 @@
       <?php if (!empty($content['field_phase'][0])):?>
         <?php print render($content['field_phase'][0]['#markup']);?>
         <?php if (!empty($content['field_phase'][1])):?>
-          or
+          and
         <?php endif;?>
       <?php endif;?>
 
       <?php if (!empty($content['field_phase'][1])):?>
         <?php print render($content['field_phase'][1]['#markup']);?>
         <?php if (!empty($content['field_phase'][2])):?>
-          or
+          and
         <?php endif;?>
       <?php endif;?>
 
@@ -46,6 +46,7 @@
       <?php print render($content['field_ingredients']);?>
       <?php print render($content['field_directions']);?>
       <?php print render($content['print_links']);?>
+      <?php print flag_create_link('bookmarks', $node->nid); ?>
     </div>
 
   </div>

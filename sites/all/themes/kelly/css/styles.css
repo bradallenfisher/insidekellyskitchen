@@ -364,7 +364,11 @@ ul, li, ol {
 
 a {
   text-decoration: none;
-  color: #000; }
+  color: #FF69B4; }
+
+.menu .leaf {
+  list-style-image: none;
+  list-style-type: none; }
 
 h1 {
   font-size: 2em;
@@ -374,7 +378,18 @@ h1 {
 h2 {
   font-size: 1.6em;
   margin: 0;
-  padding: 20px; }
+  padding: 20px 0; }
+
+.color-1 {
+  color: #FF69B4; }
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.6; }
+
+p.small {
+  font-size: .8rem !important;
+  font-style: italic; }
 
 #block-block-11 {
   padding-bottom: 20px;
@@ -403,6 +418,9 @@ h2 {
   margin: 10px auto;
   max-width: 800px; }
 
+#block-block-42 {
+  clear: both; }
+
 .amazon-ad-code {
   clear: both;
   overflow: hidden;
@@ -415,32 +433,21 @@ h2 {
     margin-left: 0px !important;
     margin-bottom: 0px !important; }
 
-@media (min-width: 1200px) {
-  article {
-    width: 90%;
-    margin: 0 auto; } }
-
-@media (min-width: 1400px) {
-  article {
-    width: 85%;
-    margin: 0 auto; } }
-
-article a:link {
-  color: #009bff; }
-
-article a:visited {
-  color: #009bff; }
-
-article a:hover {
-  color: #005bff; }
-
-article a:active {
-  color: #009bff; }
-
-@media (min-width: 801px) {
-  .view-blog {
-    width: 80%;
-    margin: 0 auto; } }
+.page-node-1024 .field--name-body {
+  text-align: center; }
+  @media (min-width: 600px) {
+    .page-node-1024 .field--name-body {
+      text-align: left; } }
+  .page-node-1024 .field--name-body a {
+    display: block;
+    padding: 15px;
+    border: 1px solid #FF69B4;
+    margin: 10px; }
+    @media (min-width: 600px) {
+      .page-node-1024 .field--name-body a {
+        display: inline-block; } }
+    .page-node-1024 .field--name-body a:hover {
+      border: 1px solid #000; }
 
 .view-blog .views-row {
   clear: both;
@@ -471,21 +478,18 @@ article a:active {
 .node--blog {
   max-width: 801px; }
 
-#block-views-blog-field-from-recipes-block {
-  width: 80%;
-  margin: 20px auto; }
-  #block-views-blog-field-from-recipes-block p {
-    line-height: 2;
-    font-size: 1.3rem; }
-  #block-views-blog-field-from-recipes-block h2 {
-    padding: 20px 0; }
+#block-views-blog-field-from-recipes-block p {
+  line-height: 2;
+  font-size: 1.3rem; }
+
+#block-views-blog-field-from-recipes-block h2 {
+  padding: 20px 0; }
 
 .bottom {
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
   clear: both;
   overflow: hidden; }
   .bottom:after {
@@ -502,14 +506,14 @@ article a:active {
     width: 50%; }
     @media (min-width: 801px) {
       .cookbook .cookbook-image .field--name-field-image img {
-        width: 40%;
+        width: 25%;
         float: left;
         margin-right: 20px; } }
 
 @media (min-width: 801px) {
   .cookbook .cookbook-text {
     float: right;
-    width: 48%; } }
+    width: 70%; } }
 
 .cookbook h1.cookbook-title {
   color: #000;
@@ -528,6 +532,35 @@ article a:active {
   float: right;
   padding: 40px 0;
   font-weight: 300; }
+
+.features-top-home {
+  box-sizing: border-box;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .features-top-home:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 600px) {
+    .features-top-home {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+      flex-flow: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .features-top-home .item {
+        width: 33%; }
+        .features-top-home .item img {
+          border: 3px solid #fff; }
+          .features-top-home .item img:hover {
+            border: 3px solid #FF69B4; } }
 
 .views-exposed-form .views-exposed-widget {
   padding: 0;
@@ -718,14 +751,26 @@ label[for=edit-field-food-type-value]:hover {
 
 #header {
   box-sizing: border-box;
-  width: 55%;
-  float: left; }
+  width: 70%;
+  float: left;
+  text-align: center;
+  margin: 0 auto; }
   @media (min-width: 801px) {
     #header {
-      width: 19%; } }
-  @media (min-width: 1000px) {
-    #header {
-      width: 30%; } }
+      width: 55%;
+      clear: both;
+      float: none; } }
+  #header h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px; }
+    @media (min-width: 800px) {
+      #header h1 {
+        margin: 20px 0;
+        font-size: 3rem; } }
+    #header h1 a {
+      color: #000; }
 
 #block-block-1 {
   padding: 0 40px 40px 40px; }
@@ -735,10 +780,16 @@ ul, li {
   padding: 0; }
 
 .l-main {
-  border-top: 2px solid #222;
-  padding: 20px;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   clear: both;
   overflow: hidden; }
+  .l-main:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 .mean-container .mean-bar {
   min-height: 0;
@@ -757,27 +808,51 @@ ul, li {
 
 .l-region--mobile-navigation.open {
   display: block; }
+  .l-region--mobile-navigation.open ul.menu li {
+    list-style-type: none;
+    list-style-image: none; }
+    .l-region--mobile-navigation.open ul.menu li a {
+      display: block;
+      background: #000;
+      padding: 10px;
+      color: #fff;
+      border-bottom: 1px solid #FF69B4; }
+  .l-region--mobile-navigation.open ul.menu li ul li {
+    list-style-type: none;
+    list-style-image: none; }
 
 #navigation {
   display: none;
-  clear: both; }
+  clear: both;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto 30px auto; }
+  #navigation:after {
+    content: " ";
+    display: block;
+    clear: both; }
   @media (min-width: 801px) {
     #navigation {
       clear: none;
-      margin-top: 0;
-      float: right;
       display: block;
-      padding: 6px 0;
-      margin-left: 20px; } }
+      padding: 6px 0; } }
   #navigation ul, #navigation li {
     display: inline; }
+  #navigation ul li ul li a {
+    border-right: none; }
   #navigation a {
+    background: #000;
     clear: none;
-    color: #000;
+    color: #fff;
     display: inline-block;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none; }
+    text-decoration: none;
+    border-right: 2px solid #fff; }
+    #navigation a:hover {
+      background: #FF69B4; }
 
 .sf-menu {
   line-height: 1.3; }
@@ -802,7 +877,7 @@ ul, li {
     text-align: left; }
     #block-superfish-1 .menu ul ul {
       margin-top: 0;
-      background: #000; }
+      background: #FF69B4; }
   #block-superfish-1 .menu li {
     display: -webkit-box;
     display: -webkit-flex;
@@ -827,24 +902,22 @@ ul, li {
         padding-left: 20px;
         text-align: left; }
         #block-superfish-1 .menu li li a:hover {
-          background-color: #383838; }
+          background-color: #FF69B4; }
 
-.side {
-  text-align: center; }
-  .side ul {
-    margin-top: 45px;
-    margin-bottom: 20px; }
-    .side ul li {
-      display: block; }
-      .side ul li a {
-        background: #000;
-        color: #fff;
-        display: block;
-        font-size: 1em;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 1px;
-        padding: 10px;
-        text-decoration: none; }
+#block-menu-block-3 {
+  margin-bottom: 20px; }
+  #block-menu-block-3 .menu ul {
+    text-align: left; }
+    #block-menu-block-3 .menu ul ul {
+      margin-top: 0;
+      background: #FF69B4; }
+  #block-menu-block-3 .menu li a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444; }
+  #block-menu-block-3 .menu li li a:hover {
+    background-color: #FF69B4; }
 
 .node__content {
   clear: both; }
@@ -860,9 +933,6 @@ ul, li {
   .node__content .a2a_kit {
     display: block;
     margin: 20px; }
-
-.not-front .node--page {
-  max-width: 801px; }
 
 .pager {
   clear: both;
@@ -881,6 +951,10 @@ ul, li {
     line-height: 0;
     margin: 10px 0;
     padding: 0; }
+    @media (min-width: 1000px) {
+      .field--name-field-paypal form {
+        float: left;
+        margin-right: 10px; } }
 
 .page-nutrimost-phase2-recipes h1, .section-nutrimost-phase4-recipes h1, .section-nutrimost-beyond-recipes h1 {
   color: #000;
@@ -1112,27 +1186,39 @@ ul, li {
   clear: both; }
 
 .search-bar {
-  display: none; }
-
-.search-bar.open {
-  clear: both;
-  display: block;
-  padding: 10px; }
-  @media (min-width: 801px) {
-    .search-bar.open {
-      padding: 50px; } }
+  padding: 10px 0;
+  box-sizing: border-box;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both; }
+  .search-bar:after {
+    content: " ";
+    display: block;
+    clear: both; }
 
 input#edit-search-block-form--2 {
-  width: 64%;
-  padding: 10px; }
+  width: 63%;
+  padding: 10px;
+  border: 1px solid #FF69B4; }
+  @media (min-width: 400px) {
+    input#edit-search-block-form--2 {
+      width: 64%; } }
 
 input[type="submit"] {
-  background: #000;
-  border: 2px solid #000;
-  color: #fff;
-  float: right;
+  background: #fff;
+  border: 1px solid #FF69B4;
+  color: #FF69B4;
+  font-weight: bold;
+  text-transform: uppercase;
   padding: 10px;
   width: 35%; }
+  @media (min-width: 900px) {
+    input[type="submit"] {
+      width: 35.5%; } }
+  input[type="submit"]:hover {
+    background: #000;
+    color: #fff; }
 
 html.js .form-autocomplete {
   background-image: none;
@@ -1146,59 +1232,83 @@ html.js .form-autocomplete {
   background-image: none;
   background-repeat: no-repeat; }
 
-@media (min-width: 900px) {
-  .second-sidebar .l-content {
-    width: 550px;
-    float: left;
-    margin: 0 auto; }
-  .second-sidebar .side {
-    width: 300px;
-    float: right; } }
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content.ui-corner-all {
+  z-index: 9999; }
 
-@media (min-width: 950px) {
-  .second-sidebar .l-content {
-    width: 600px;
-    float: left;
-    margin: 0 auto; }
-  .second-sidebar .side {
-    width: 300px;
-    float: right; } }
+.node--special-offer {
+  clear: both; }
+  .node--special-offer .field--name-field-offer-image {
+    text-align: center; }
+    @media (min-width: 800px) {
+      .node--special-offer .field--name-field-offer-image {
+        float: left;
+        width: 25%; } }
+  @media (min-width: 800px) {
+    .node--special-offer .field--name-body {
+      float: left;
+      width: 70%; } }
 
-@media (min-width: 1000px) {
-  .second-sidebar .l-content {
-    width: 650px;
-    float: left;
-    margin: 0 auto; }
-  .second-sidebar .side {
-    width: 300px;
-    float: right; } }
+.offer-links {
+  text-align: center; }
+  @media (min-width: 800px) {
+    .offer-links {
+      text-align: left; } }
+  .offer-links a {
+    background: #FF69B4;
+    color: #fff;
+    font-size: 1.2em;
+    display: inline-block;
+    border-radius: .5em;
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 20px; }
+    .offer-links a:hover {
+      background: #000; }
 
-@media (min-width: 1050px) {
-  .second-sidebar .l-content {
-    width: 700px;
-    float: left;
-    margin: 0 auto; }
-  .second-sidebar .side {
-    width: 300px;
-    float: right; } }
+.view-special-offers .views-row {
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  overflow: hidden; }
 
-@media (min-width: 1100px) {
-  .second-sidebar .l-content {
-    width: 750px;
-    float: left;
-    margin: 0 auto; }
-  .second-sidebar .side {
-    width: 300px;
-    float: right; } }
+.view-special-offers .view-footer {
+  clear: both;
+  padding: 20px; }
+  .view-special-offers .view-footer p {
+    font-size: .9rem; }
 
-@media (min-width: 1150px) {
-  .second-sidebar .l-content {
-    width: 800px;
-    float: left;
-    margin: 0 auto; }
-  .second-sidebar .side {
-    width: 300px;
-    float: right; } }
+.view-special-offers .views-field-field-offer-image {
+  text-align: center; }
+  @media (min-width: 800px) {
+    .view-special-offers .views-field-field-offer-image {
+      float: left;
+      width: 25%; } }
+
+.view-special-offers .views-field-title {
+  font-size: 2rem;
+  margin: 20px 0;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .view-special-offers .views-field-title {
+      text-align: left;
+      width: 70%; } }
+
+.view-special-offers .views-field-body {
+  padding: 10px;
+  font-size: 1.3rem; }
+  @media (min-width: 800px) {
+    .view-special-offers .views-field-body {
+      float: left;
+      width: 70%; } }
+
+.view-special-offers .views-field-view-node {
+  padding: 20px;
+  text-align: center; }
+  @media (min-width: 800px) {
+    .view-special-offers .views-field-view-node {
+      float: right;
+      text-align: right; } }
 
 @media (min-width: 1200px) {
   .second-sidebar .l-content {

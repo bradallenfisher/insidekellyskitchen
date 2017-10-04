@@ -11,12 +11,6 @@
         }
 			}
     );
-    $('.search-expander').click(
-	    function () {
-        $('.search-bar').toggleClass('open');
-			}
-    );
-
 
 	});
 })(jQuery);

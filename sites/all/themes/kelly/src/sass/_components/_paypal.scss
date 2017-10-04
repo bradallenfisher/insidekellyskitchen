@@ -5,5 +5,9 @@
     line-height: 0;
     margin:10px 0;
     padding: 0;
+    @include breakpoint(1000px, true) {
+      float: left;
+      margin-right: 10px;
+    }
   }
 }

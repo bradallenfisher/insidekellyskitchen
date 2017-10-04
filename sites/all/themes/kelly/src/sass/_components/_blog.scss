@@ -1,8 +1,5 @@
 .view-blog{
-  @include breakpoint($full, true) {
-    width: 80%;
-    margin: 0 auto;
-  }
+
   .views-row {
     clear: both;
     overflow: hidden;
@@ -45,8 +42,6 @@
 }
 
 #block-views-blog-field-from-recipes-block {
-  width: 80%;
-  margin: 20px auto;
 
   p {
     line-height: 2;

@@ -3,11 +3,13 @@
 <div class="row">
   <div class="head-wrapper">
     <header id="header">
-  	  <a href="/"><img src="/sites/all/themes/kelly/images/logo.svg" /></a>
+  	  <h1><a href="/">Inside <span class="color-1 uppercase">Kellys</span> Kitchen</a></h1>
     </header>
-    <div class="search-expander"><i class="fa fa-search"></i></div>
     <div class="menu-expander">MENU</div>
 
+    <div class="search-bar">
+      <?php print render($page['search_bar']);?>
+    </div>
     <nav id="navigation">
       <?php print render($page['navigation']);?>
     </nav>
@@ -18,13 +20,30 @@
 
   </div>
 </div>
+
 <div class="mobile-nav"></div>
 
+<?php if($is_front):?>
+  <div class="features-top-home">
+    <div class="item">
+    <a href="/cookbooks/oil-free-recipes-cookbook">
+      <img src="/sites/all/themes/kelly/images/cookbooks.jpg" />
+    </a>
+    </div>
+    <div class="item">
+    <a href="/special-offers">
+      <img src="/sites/all/themes/kelly/images/specialOffers.jpg" />
+    </a>
+    </div>
+    <div class="item">
+      <a href="/oil-free-products">
+      <img src="/sites/all/themes/kelly/images/oil-free-products.jpg" />
+      </a>
+    </div>
+  </div>
+<?php endif;?>
 
   <div class="l-main">
-    <div class="search-bar">
-      <?php print render($page['search_bar']);?>
-    </div>
 
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
@@ -34,11 +53,10 @@
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
+
+      <?php if (!$is_front):?>
+        <?php print render($page['content']); ?>
+      <?php endif;?>
     </div>
 
     <div class="side">

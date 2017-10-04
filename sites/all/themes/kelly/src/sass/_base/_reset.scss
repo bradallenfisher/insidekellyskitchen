@@ -14,5 +14,9 @@ ul, li, ol {
 }
 a {
   text-decoration: none;
-  color: $black;
+  color: $color-1;
+}
+.menu .leaf {
+    list-style-image: none;
+    list-style-type: none;
 }
