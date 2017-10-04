@@ -46,7 +46,6 @@
       <?php print render($content['field_ingredients']);?>
       <?php print render($content['field_directions']);?>
       <?php print render($content['print_links']);?>
-      <?php print flag_create_link('bookmarks', $node->nid); ?>
     </div>
 
   </div>
