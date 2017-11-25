@@ -1,0 +1,59 @@
+.view-cookbooks {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .view-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+  }
+
+  .views-row {
+    width: 49%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    @include breakpoint($full, true) {
+      width: 30%;
+    }
+  }
+
+  .view-header {
+    text-align: center;
+    margin-bottom: 0;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .buyboth {
+      margin-bottom: 10px;
+    }
+
+    .paypal-form {
+      margin-bottom: 20px;
+    }
+  }
+
+  .views-field-title {
+    h2 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+
+  .views-field-field-image {
+
+
+    img {
+
+
+    }
+  }
+
+  .views-field-title h2 {
+
+
+  }
+
+}

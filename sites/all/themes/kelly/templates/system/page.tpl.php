@@ -26,7 +26,7 @@
 <?php if($is_front):?>
   <div class="features-top-home">
     <div class="item">
-    <a href="/cookbooks/oil-free-recipes-cookbook">
+    <a href="/cookbooks">
       <img src="/sites/all/themes/kelly/images/cookbooks.jpg" />
     </a>
     </div>

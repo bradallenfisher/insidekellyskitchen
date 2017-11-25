@@ -8,9 +8,6 @@
     .field--name-field-image {
       text-align: center;
 
-      @include breakpoint(700px, true){
-
-      }
       img {
         width: 50%;
         @include breakpoint($full, true) {
@@ -37,6 +34,10 @@
     }
   }
   .field--name-field-paypal {
+    text-align: center;
+    input {
+      max-width: 100%;
+    }
     @include breakpoint($full, true){
       text-align: left;
     }
@@ -47,5 +48,4 @@
   float: right;
   padding: 40px 0;
   font-weight: 300;
-
 }

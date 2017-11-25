@@ -523,15 +523,52 @@ p.small {
     .cookbook h1.cookbook-title {
       text-align: left; } }
 
-@media (min-width: 801px) {
-  .cookbook .field--name-field-paypal {
-    text-align: left; } }
+.cookbook .field--name-field-paypal {
+  text-align: center; }
+  .cookbook .field--name-field-paypal input {
+    max-width: 100%; }
+  @media (min-width: 801px) {
+    .cookbook .field--name-field-paypal {
+      text-align: left; } }
 
 .cookbook-body {
   font-size: 1.7em;
   float: right;
   padding: 40px 0;
   font-weight: 300; }
+
+.view-cookbooks {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto; }
+  .view-cookbooks .view-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 1%; }
+  .view-cookbooks .views-row {
+    width: 49%;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    @media (min-width: 801px) {
+      .view-cookbooks .views-row {
+        width: 30%; } }
+  .view-cookbooks .view-header {
+    text-align: center;
+    margin-bottom: 0; }
+    .view-cookbooks .view-header h1 {
+      margin-bottom: 0; }
+    .view-cookbooks .view-header .buyboth {
+      margin-bottom: 10px; }
+    .view-cookbooks .view-header .paypal-form {
+      margin-bottom: 20px; }
+  .view-cookbooks .views-field-title h2 {
+    font-size: 1.2em;
+    text-align: center; }
 
 .features-top-home {
   box-sizing: border-box;
@@ -944,17 +981,6 @@ ul, li {
   color: #fff;
   padding: 8px;
   border-radius: 50%; }
-
-.field--name-field-paypal {
-  text-align: center; }
-  .field--name-field-paypal form {
-    line-height: 0;
-    margin: 10px 0;
-    padding: 0; }
-    @media (min-width: 1000px) {
-      .field--name-field-paypal form {
-        float: left;
-        margin-right: 10px; } }
 
 .page-nutrimost-phase2-recipes h1, .section-nutrimost-phase4-recipes h1, .section-nutrimost-beyond-recipes h1 {
   color: #000;
