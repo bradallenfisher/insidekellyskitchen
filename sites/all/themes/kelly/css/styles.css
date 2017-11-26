@@ -569,11 +569,12 @@ p.small {
       margin-bottom: 20px;
       margin: 0 auto;
       text-align: center;
-      display: block; }
+      display: block;
+      width: 100%;
+      max-width: 400px; }
       .view-cookbooks .view-header .paypal-form input[type="image"] {
         display: block;
-        width: 100%;
-        max-width: 400px; }
+        width: 100%; }
       .view-cookbooks .view-header .paypal-form input {
         display: block; }
   .view-cookbooks .views-field-title h2 {

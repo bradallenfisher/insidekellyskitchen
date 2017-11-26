@@ -36,10 +36,12 @@
       margin: 0 auto;
       text-align: center;
       display: block;
+      width: 100%;
+      max-width: 400px;
+
       input[type="image"] {
         display: block;
         width: 100%;
-        max-width: 400px;
       }
       input {
         display: block;
