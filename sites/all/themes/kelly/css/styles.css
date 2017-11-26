@@ -567,13 +567,13 @@ p.small {
       margin-bottom: 10px; }
     .view-cookbooks .view-header .paypal-form {
       margin-bottom: 20px;
-      max-width: 400px;
-      width: 100%;
       margin: 0 auto;
       text-align: center;
       display: block; }
       .view-cookbooks .view-header .paypal-form input[type="image"] {
-        display: block; }
+        display: block;
+        width: 100%;
+        max-width: 400px; }
       .view-cookbooks .view-header .paypal-form input {
         display: block; }
   .view-cookbooks .views-field-title h2 {

@@ -33,13 +33,13 @@
 
     .paypal-form {
       margin-bottom: 20px;
-      max-width: 400px;
-      width: 100%;
       margin: 0 auto;
       text-align: center;
       display: block;
       input[type="image"] {
         display: block;
+        width: 100%;
+        max-width: 400px;
       }
       input {
         display: block;
