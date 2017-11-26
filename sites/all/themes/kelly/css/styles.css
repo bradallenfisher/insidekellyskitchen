@@ -524,7 +524,8 @@ p.small {
       text-align: left; } }
 
 .cookbook .field--name-field-paypal {
-  text-align: center; }
+  text-align: center;
+  max-width: 500px; }
   .cookbook .field--name-field-paypal input {
     max-width: 100%; }
   @media (min-width: 801px) {
@@ -534,7 +535,7 @@ p.small {
 .cookbook-body {
   font-size: 1.7em;
   float: right;
-  padding: 40px 0;
+  padding: 0 20px 20px;
   font-weight: 300; }
 
 .view-cookbooks {
@@ -565,7 +566,9 @@ p.small {
     .view-cookbooks .view-header .buyboth {
       margin-bottom: 10px; }
     .view-cookbooks .view-header .paypal-form {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      max-width: 400px;
+      margin: 0 auto; }
   .view-cookbooks .views-field-title h2 {
     font-size: 1.2em;
     text-align: center; }
