@@ -568,7 +568,14 @@ p.small {
     .view-cookbooks .view-header .paypal-form {
       margin-bottom: 20px;
       max-width: 400px;
-      margin: 0 auto; }
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      display: block; }
+      .view-cookbooks .view-header .paypal-form input[type="image"] {
+        display: block; }
+      .view-cookbooks .view-header .paypal-form input {
+        display: block; }
   .view-cookbooks .views-field-title h2 {
     font-size: 1.2em;
     text-align: center; }
