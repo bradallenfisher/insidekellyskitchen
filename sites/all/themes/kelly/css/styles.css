@@ -581,6 +581,9 @@ p.small {
     font-size: 1.2em;
     text-align: center; }
 
+.field--name-field-paypal input, .paypal-form input {
+  cursor: pointer; }
+
 .features-top-home {
   box-sizing: border-box;
   max-width: 90%;
