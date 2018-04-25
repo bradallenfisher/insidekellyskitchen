@@ -574,6 +574,9 @@ p.small {
   width: 100%;
   max-width: 400px; }
 
+.page-cookbooks .l-main {
+  display: block; }
+
 .view-cookbooks {
   overflow: hidden;
   max-width: 900px;
