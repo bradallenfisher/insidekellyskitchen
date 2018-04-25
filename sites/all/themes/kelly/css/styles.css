@@ -3,6 +3,7 @@
    HTML5 display definitions
    ========================================================================== */
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
@@ -129,6 +130,7 @@ dfn {
  * Address differences between Firefox and other browsers.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -291,6 +293,7 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -304,6 +307,7 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -343,6 +347,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*
+ * A partial implementation of the Ruby list functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/lists.rb
+ */
+/*
+ * A partial implementation of the Ruby constants functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/constants.rb
+ */
+/*
+ * A partial implementation of the Ruby display functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
+ */
 img {
   max-width: 100%;
   height: auto; }
@@ -373,7 +389,7 @@ a {
 h1 {
   font-size: 2em;
   margin: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 10px; }
 
 h2 {
   font-size: 1.6em;
@@ -449,6 +465,27 @@ p.small {
     .page-node-1024 .field--name-body a:hover {
       border: 1px solid #000; }
 
+#block-block-43 {
+  width: 100%;
+  max-width: 400px; }
+  #block-block-43 a {
+    display: block;
+    padding: 10px;
+    text-align: right; }
+
+#af-form-1806241757 {
+  border-radius: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 16px; }
+
+.section-inside-health-and-fitness article {
+  text-align: center; }
+  .section-inside-health-and-fitness article h1 {
+    display: none; }
+  .section-inside-health-and-fitness article h1.show-me {
+    display: block; }
+
 .view-blog .views-row {
   clear: both;
   overflow: hidden;
@@ -486,16 +523,10 @@ p.small {
   padding: 20px 0; }
 
 .bottom {
-  box-sizing: border-box;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   clear: both;
-  overflow: hidden; }
-  .bottom:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto; }
 
 .cookbook .cookbook-inner {
   overflow: hidden; }
@@ -538,16 +569,19 @@ p.small {
   padding: 0 20px 20px;
   font-weight: 300; }
 
+#block-block-31 {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px; }
+
 .view-cookbooks {
   overflow: hidden;
   max-width: 900px;
   margin: 0 auto; }
   .view-cookbooks .view-content {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 1%; }
@@ -585,25 +619,16 @@ p.small {
   cursor: pointer; }
 
 .features-top-home {
-  box-sizing: border-box;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
-  .features-top-home:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  width: 95%;
+  margin: 0 auto; }
   @media (min-width: 600px) {
     .features-top-home {
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex-flow: wrap;
       -ms-flex-flow: wrap;
       flex-flow: wrap;
       -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
       justify-content: space-between; }
       .features-top-home .item {
@@ -710,6 +735,7 @@ label[for=edit-field-food-type-value]:hover {
   background-color: inherit;
   color: inherit;
   border: 1px solid #cacece;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 9px;
   border-radius: none;
@@ -718,11 +744,13 @@ label[for=edit-field-food-type-value]:hover {
   float: left;
   margin: 10px; }
   .view-filters input[type="checkbox"]:active, .view-filters input[type="checkbox"]:checked:active {
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
     color: inherit; }
   .view-filters input[type="checkbox"]:checked {
     background-color: inherit;
     border: 1px solid #adb8c0;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
     color: inherit; }
   .view-filters input[type="checkbox"]:checked:after {
@@ -735,12 +763,10 @@ label[for=edit-field-food-type-value]:hover {
 
 .bef-checkboxes {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
@@ -801,16 +827,16 @@ label[for=edit-field-food-type-value]:hover {
   text-align: right; }
 
 #header {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 70%;
   float: left;
-  text-align: center;
+  text-align: left;
   margin: 0 auto; }
   @media (min-width: 801px) {
     #header {
-      width: 55%;
       clear: both;
-      float: none; } }
+      float: none;
+      width: 95%; } }
   #header h1 {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -818,8 +844,8 @@ label[for=edit-field-food-type-value]:hover {
     margin: 20px; }
     @media (min-width: 800px) {
       #header h1 {
-        margin: 20px 0;
-        font-size: 3rem; } }
+        margin: 0px;
+        font-size: 2rem; } }
     #header h1 a {
       color: #000; }
 
@@ -831,16 +857,19 @@ ul, li {
   padding: 0; }
 
 .l-main {
-  box-sizing: border-box;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 95%;
+  margin: 0 auto;
   clear: both;
   overflow: hidden; }
-  .l-main:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  @media (min-width: 1000px) {
+    .l-main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 .mean-container .mean-bar {
   min-height: 0;
@@ -875,20 +904,13 @@ ul, li {
 #navigation {
   display: none;
   clear: both;
-  box-sizing: border-box;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto 30px auto; }
-  #navigation:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  margin: 0 auto 15px auto; }
   @media (min-width: 801px) {
     #navigation {
       clear: none;
       display: block;
-      padding: 6px 0; } }
+      padding: 6px 0;
+      width: 95%; } }
   #navigation ul, #navigation li {
     display: inline; }
   #navigation ul li ul li a {
@@ -918,10 +940,8 @@ ul, li {
 
 #block-superfish-1 .menu {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
   #block-superfish-1 .menu ul {
@@ -931,17 +951,14 @@ ul, li {
       background: #FF69B4; }
   #block-superfish-1 .menu li {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
     #block-superfish-1 .menu li a {
       display: inline-block;
       -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
       flex-grow: 1;
       padding: 10px;
@@ -1007,14 +1024,11 @@ ul, li {
 
 .view-recipes .view-content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: wrap;
   -ms-flex-flow: wrap;
   flex-flow: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .view-recipes .view-content .views-row {
@@ -1025,6 +1039,7 @@ ul, li {
     width: 100%;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
+    -webkit-box-shadow: 1px 1px 1px #eee;
     box-shadow: 1px 1px 1px #eee; }
     @media (min-width: 450px) {
       .view-recipes .view-content .views-row {
@@ -1103,7 +1118,6 @@ ul, li {
 
 .node--recipe .image {
   position: relative;
-  margin: 10px 0;
   width: 100%; }
   @media (min-width: 1450px) {
     .node--recipe .image {
@@ -1112,7 +1126,6 @@ ul, li {
   .node--recipe .image .field--name-field-recipe-image img {
     display: block;
     background: #e1e1e1;
-    padding: 5px;
     width: 100%; }
 
 .node--recipe .phase {
@@ -1227,15 +1240,9 @@ ul, li {
 
 .search-bar {
   padding: 10px 0;
-  box-sizing: border-box;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  clear: both; }
-  .search-bar:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  clear: both;
+  width: 95%;
+  margin: 0 auto; }
 
 input#edit-search-block-form--2 {
   width: 63%;
@@ -1350,14 +1357,9 @@ html.js .form-autocomplete {
       float: right;
       text-align: right; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .second-sidebar .l-content {
-    box-sizing: border-box;
-    width: 74.6988%;
-    float: left;
-    margin-right: 1.20482%; }
+    width: 70%; }
   .second-sidebar .side {
-    box-sizing: border-box;
-    width: 24.09639%;
-    float: right;
-    margin-right: 0; } }
+    width: 30%;
+    padding-left: 1%; } }

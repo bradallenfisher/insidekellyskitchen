@@ -2,8 +2,9 @@
 
 .search-bar {
   padding:10px 0;
-  @include container();
   clear: both;
+  width: 95%;
+  margin: 0 auto;
 
 }
 input#edit-search-block-form--2 {

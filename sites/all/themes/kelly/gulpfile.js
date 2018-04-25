@@ -1,15 +1,13 @@
 var gulp          = require('gulp'),
-    gutil         = require('gulp-util'),
     autoprefixer  = require('gulp-autoprefixer'),
     sourcemaps    = require('gulp-sourcemaps'),
     uglify        = require('gulp-uglify'),
-    jshint        = require('gulp-jshint'),
     sass          = require('gulp-sass'),
     concat        = require('gulp-concat'),
     sassGlob      = require('gulp-sass-glob'),
 
     input  = {
-      'scss': 'src/sass/**/*.scss',
+      'scss': 'src/scss/**/*.scss',
       'js': 'src/js/**/*.js',
     },
 
@@ -29,8 +27,8 @@ gulp.task('jshint', function() {
 });
 
 /* compile scss files */
-gulp.task('build-css', function() {
-  return gulp.src('src/sass/**/*.scss')
+gulp.task('sass', function() {
+  return gulp.src('src/scss/**/*.scss')
     .pipe(sassGlob())
     .pipe(sass())
     .pipe(autoprefixer({
@@ -41,7 +39,7 @@ gulp.task('build-css', function() {
 });
 
 /* concat javascript files, minify if --type production */
-gulp.task('build-js', function() {
+gulp.task('js', function() {
   return gulp.src(input.js)
     .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest(output.js));
@@ -50,5 +48,5 @@ gulp.task('build-js', function() {
 /* Watch these files for changes and run the task on update */
 gulp.task('watch', function() {
   gulp.watch(input.js, ['jshint', 'build-js']);
-  gulp.watch(input.scss, ['build-css']);
+  gulp.watch(input.scss, ['sass']);
 });

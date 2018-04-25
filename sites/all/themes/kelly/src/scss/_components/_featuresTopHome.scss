@@ -1,5 +1,6 @@
  .features-top-home {
-  @include container();
+   width: 95%;
+   margin: 0 auto;
   @include breakpoint (600px, true) {
     display: flex;
     flex-flow: wrap;

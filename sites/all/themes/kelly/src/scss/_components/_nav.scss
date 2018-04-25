@@ -39,12 +39,12 @@
 #navigation {
   display: none;
   clear:both;
-    @include container();
-  margin: 0 auto 30px auto;
+  margin: 0 auto 15px auto;
   @include breakpoint($full, true) {
     clear: none;
     display: block;
     padding: 6px 0;
+    width: 95%;
   }
   ul, li {
     display: inline;

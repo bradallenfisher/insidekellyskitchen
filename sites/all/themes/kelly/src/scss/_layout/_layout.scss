@@ -1,0 +1,14 @@
+@include breakpoint(1000px, true) {
+ .second-sidebar {
+    .l-content {
+      width: 70%;
+    }
+  }
+
+  .second-sidebar {
+    .side {
+      width: 30%;
+      padding-left: 1%;
+    }
+  }
+}

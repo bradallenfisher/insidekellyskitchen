@@ -1,0 +1,10 @@
+.l-main {
+  width: 95%;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+  @include breakpoint(1000px, true) {
+    display: flex;
+    flex-direction: row;
+  }
+}

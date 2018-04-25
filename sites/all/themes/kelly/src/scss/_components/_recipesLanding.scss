@@ -51,7 +51,6 @@
   }
   .image {
     position: relative;
-    margin: 10px 0;
     width: 100%;
     @include breakpoint(1450px, true) {
       float: left;
@@ -61,7 +60,6 @@
       img {
         display: block;
         background: #e1e1e1;
-        padding: 5px;
         width: 100%;
       }
     }

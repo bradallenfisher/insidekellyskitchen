@@ -1,5 +1,6 @@
 .bottom {
-  @include container();
   clear: both;
   overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
 }

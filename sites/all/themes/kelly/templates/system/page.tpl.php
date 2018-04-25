@@ -31,8 +31,8 @@
     </a>
     </div>
     <div class="item">
-    <a href="/special-offers">
-      <img src="/sites/all/themes/kelly/images/specialOffers.jpg" />
+    <a href="/join-inside-health-and-fitness-club">
+      <img src="/sites/all/themes/kelly/images/IHFInsiderBanner.jpg" />
     </a>
     </div>
     <div class="item">
