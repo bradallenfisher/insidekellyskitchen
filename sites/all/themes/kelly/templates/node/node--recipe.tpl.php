@@ -38,8 +38,8 @@
     <?php print render($content['field_servings']);?>
 
   <div class="cookbook_ad">
-    <a href="http://insidekellyskitchen.com/cookbooks/oil-free-recipes-cookbook">
-    <img alt="Buy The Cookbook from inside kellys kitchen - oil free recipes it's for sale by clicking this image" src="http://insidekellyskitchen.com/sites/default/files/cookbookad.svg" /></a>
+    <a href="/cookbooks">
+    <img alt="Buy The Cookbook from inside kellys kitchen - oil free recipes it's for sale by clicking this image" src="/sites/default/files/cookbookad.svg" /></a>
   </div>
 
     <div class="text">
