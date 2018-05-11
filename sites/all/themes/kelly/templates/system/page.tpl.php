@@ -25,21 +25,31 @@
 
 <?php if($is_front):?>
   <div class="features-top-home">
+
     <div class="item">
-    <a href="/cookbooks">
-      <img src="/sites/all/themes/kelly/images/cookbooks.jpg" />
-    </a>
-    </div>
-    <div class="item">
-    <a href="/join-inside-health-and-fitness-club">
-      <img src="/sites/all/themes/kelly/images/IHFInsiderBanner.jpg" />
-    </a>
-    </div>
-    <div class="item">
-      <a href="/oil-free-products">
-      <img src="/sites/all/themes/kelly/images/oil-free-products.jpg" />
+      <a href="http://insidekelly.metabolicfactor.com/omadrage/website">
+        <img src="/sites/all/themes/kelly/images/factor.jpg" />
       </a>
     </div>
+
+    <div class="item">
+      <a href="/cookbooks">
+        <img src="/sites/all/themes/kelly/images/cookbooks.jpg" />
+      </a>
+    </div>
+
+    <div class="item">
+      <a href="/join-inside-health-and-fitness-club">
+       <img src="/sites/all/themes/kelly/images/IHFInsiderBanner.jpg" />
+      </a>
+    </div>
+
+    <div class="item">
+      <a href="/oil-free-products">
+        <img src="/sites/all/themes/kelly/images/oil-free-products.jpg" />
+      </a>
+    </div>
+
   </div>
 <?php endif;?>
 

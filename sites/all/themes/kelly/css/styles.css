@@ -635,7 +635,7 @@ p.small {
       -ms-flex-pack: justify;
       justify-content: space-between; }
       .features-top-home .item {
-        width: 33%; }
+        width: 25%; }
         .features-top-home .item img {
           border: 3px solid #fff; }
           .features-top-home .item img:hover {
@@ -844,7 +844,7 @@ label[for=edit-field-food-type-value]:hover {
     font-size: 1rem;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    margin: 20px; }
+    margin: 5px; }
     @media (min-width: 800px) {
       #header h1 {
         margin: 0px;
@@ -1046,13 +1046,13 @@ ul, li {
     box-shadow: 1px 1px 1px #eee; }
     @media (min-width: 450px) {
       .view-recipes .view-content .views-row {
-        width: 48%; } }
+        width: 49.4%; } }
     @media (min-width: 550px) {
       .view-recipes .view-content .views-row {
-        width: 32%; } }
+        width: 32.8%; } }
     @media (min-width: 1180px) {
       .view-recipes .view-content .views-row {
-        width: 23%; } }
+        width: 24.6%; } }
     .view-recipes .view-content .views-row .views-field-title {
       padding: 10px; }
       .view-recipes .view-content .views-row .views-field-title a {

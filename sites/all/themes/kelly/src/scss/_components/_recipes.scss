@@ -29,15 +29,15 @@
       box-shadow: 1px 1px 1px #eee;
 
       @include breakpoint(450px, true) {
-        width: 48%;
+        width: 49.4%;
       }
 
       @include breakpoint(550px, true) {
-        width: 32%;
+        width: 32.8%;
       }
 
       @include breakpoint(1180px, true){
-        width: 23%;
+        width: 24.6%;
       }
 
     .views-field-title {

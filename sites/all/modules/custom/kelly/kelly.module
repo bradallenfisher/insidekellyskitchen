@@ -1,5 +1,0 @@
-<?php
-function kelly_menu_alter(&$items) {
-  // Example - disable the page at node/add
-  //dpm($items);
-}
