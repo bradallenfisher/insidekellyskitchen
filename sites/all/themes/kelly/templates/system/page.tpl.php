@@ -27,12 +27,6 @@
   <div class="features-top-home">
 
     <div class="item">
-      <a href="http://insidekelly.metabolicfactor.com/omadrage/website">
-        <img src="/sites/all/themes/kelly/images/factor.jpg" />
-      </a>
-    </div>
-
-    <div class="item">
       <a href="/cookbooks">
         <img src="/sites/all/themes/kelly/images/cookbooks.jpg" />
       </a>
@@ -40,7 +34,7 @@
 
     <div class="item">
       <a href="/join-inside-health-and-fitness-club">
-       <img src="/sites/all/themes/kelly/images/IHFInsiderBanner.jpg" />
+       <img src="/sites/all/themes/kelly/images/store.jpg" />
       </a>
     </div>
 

@@ -635,7 +635,7 @@ p.small {
       -ms-flex-pack: justify;
       justify-content: space-between; }
       .features-top-home .item {
-        width: 25%; }
+        width: 33%; }
         .features-top-home .item img {
           border: 3px solid #fff; }
           .features-top-home .item img:hover {
