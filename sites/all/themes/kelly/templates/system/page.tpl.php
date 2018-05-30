@@ -33,8 +33,8 @@
     </div>
 
     <div class="item">
-      <a href="https://inside-kellys-kitchen.myshopify.com/">
-       <img src="/sites/all/themes/kelly/images/store.jpg" />
+      <a href="/special-offers">
+       <img src="/sites/all/themes/kelly/images/callout.jpg" />
       </a>
     </div>
 
