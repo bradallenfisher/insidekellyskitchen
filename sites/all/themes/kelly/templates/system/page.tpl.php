@@ -74,5 +74,6 @@
 
   <footer class="l-footer" role="contentinfo">
     <?php print render($page['footer']); ?>
+    <p style="color:white;">Website Design and Development by <a href="https://www.seostatecollege.com">SEO State College</a></p>
   </footer>
 </div>
