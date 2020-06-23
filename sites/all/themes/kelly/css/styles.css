@@ -907,7 +907,7 @@ ul, li {
 #navigation {
   display: none;
   clear: both;
-  margin: 0 auto 15px auto; }
+  margin: 0 auto 0 auto; }
   @media (min-width: 801px) {
     #navigation {
       clear: none;

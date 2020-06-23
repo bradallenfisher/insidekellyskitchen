@@ -22,7 +22,7 @@
 </div>
 
 <div class="mobile-nav"></div>
-
+<!--<div><a style="width:95%; padding: 10px;margin:0 auto 4px auto;text-align:center; display: block;font-size: 24px; font-weight:bold;color: white; width: 100%; background:#FF69B4;" href="/special-offers/please-consider-donation">Please Consider A Donation</a></div>-->
 <?php if($is_front):?>
   <div class="features-top-home">
 

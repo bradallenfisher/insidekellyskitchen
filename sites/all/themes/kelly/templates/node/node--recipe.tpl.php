@@ -37,11 +37,6 @@
     <?php print render($content['field_calories_per_serving']);?>
     <?php print render($content['field_servings']);?>
 
-  <div class="cookbook_ad">
-    <a href="/cookbooks">
-    <img alt="Buy The Cookbook from inside kellys kitchen - oil free recipes it's for sale by clicking this image" src="/sites/default/files/cookbookad.svg" /></a>
-  </div>
-
     <div class="text">
       <?php print render($content['field_ingredients']);?>
       <?php print render($content['field_directions']);?>
